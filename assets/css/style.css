@@ -1,0 +1,27 @@
+body{
+    box-sizing: content-box;
+    background-color: rgb(210, 185, 148);
+    color: white;
+}
+nav{
+    width: 1920px;
+    max-width: 100%;
+    min-width: 80%;
+    margin: 20px auto;
+    justify-content: center;
+    align-items: center;
+    gap: 30px  ;
+    display: flex;
+}
+a{
+    font-family: "Unbounded", sans-serif;
+    color: inherit;
+    text-decoration: none;
+    transition: ease 500ms;
+}
+
+
+a:hover{
+    color: black;
+    transform:translateY(-20%);
+}

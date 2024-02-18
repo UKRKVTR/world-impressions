@@ -1,27 +1,52 @@
-body{
-    box-sizing: content-box;
-    background-color: rgb(210, 185, 148);
-    color: white;
+body {
+  box-sizing: content-box;
+  background-color: rgb(210, 185, 148);
+  color: white;
 }
-nav{
-    width: 1920px;
-    max-width: 100%;
-    min-width: 80%;
-    margin: 20px auto;
-    justify-content: center;
-    align-items: center;
-    gap: 30px  ;
-    display: flex;
+nav {
+  width: 1920px;
+  max-width: 100%;
+  min-width: 80%;
+  position: fixed;
+  margin: 20px auto;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  display: flex;
+  top: -80px;
+  transition: top ease 1s;
 }
-a{
-    font-family: "Unbounded", sans-serif;
-    color: inherit;
-    text-decoration: none;
-    transition: ease 500ms;
+nav.show {
+  top: 0;
 }
-
-
-a:hover{
-    color: black;
-    transform:translateY(-20%);
+a {
+  font-family: 'Unbounded', sans-serif;
+  color: inherit;
+  text-decoration: none;
+  transition: ease 500ms;
+}
+a:hover {
+  color: black;
+  transform: translateY(-20%);
+}
+main {
+  width: 100%;
+}
+.main {
+  margin: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slider {
+  max-width: 1100px;
+  max-height: 700px;
+  width: 100%;
+}
+.slider img {
+  position: absolute;
+  transition: opacity 0.5s ease;
+}
+.slider img:first-child {
+  display: block;
 }

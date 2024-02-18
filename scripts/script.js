@@ -1,8 +1,8 @@
 document.addEventListener('DOMContentLoaded', function () {
   const imageStore = [
-    { src: '../assets/img/world1.png', alt: 'world1' },
-    { src: '../assets/img/world2.png', alt: 'world2' },
-    { src: '../assets/img/world3.png', alt: 'world3' }
+    { src: './assets/img/world1.png', alt: 'world1' },
+    { src: './assets/img/world2.png', alt: 'world2' },
+    { src: './assets/img/world3.png', alt: 'world3' }
   ]
   let slider = document.querySelector('.slider')
   let navbar = document.getElementById('navbar')

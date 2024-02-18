@@ -33,13 +33,16 @@ a:hover {
   color: black;
   transform: translateY(-20%);
 }
+.logo {
+  max-width: 120px;
+}
 main {
   width: 100%;
 }
 
 .main {
   margin: 0 auto;
-  padding: 0 50px;
+  padding: 20px 50px;
   display: flex;
   position: relative;
   flex-direction: column;
@@ -104,11 +107,19 @@ main {
   opacity: 0.5;
 }
 .whereAmI {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.mapsInfo {
   width: 1000px;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 250px auto;
+}
+.about {
 }
 .map {
   display: block;

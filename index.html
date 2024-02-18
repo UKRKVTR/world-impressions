@@ -26,9 +26,30 @@
 
     <main>
       <div class="main">
-        <div class="slider"></div>
+        <div class="slider">
+          <div class="textSlide">
+            <h1 class="title">Світ захоплень</h1>
+            <p class="titleParag">Місце, де народжується диво</p>
+          </div>
+        </div>
       </div>
-      <div class="whereAmI"></div>
+      <div class="whereAmI" id="map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d669.6882875004943!2d35.17486416963552!3d47.82500099820068!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dc5d105e838187%3A0xa64e0f7a038d4cf6!2sSvit%20Zakhoplen%CA%B9!5e0!3m2!1sru!2sua!4v1708268436306!5m2!1sru!2sua"
+          class="map"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+        <img
+          class="geolocation"
+          src="./assets/img/photo_2024-02-18_17-04-51.jpg"
+          alt="whereAmI"
+        />
+      </div>
     </main>
     <footer></footer>
     <script src="./scripts/script.js"></script>

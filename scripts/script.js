@@ -4,14 +4,16 @@ document.addEventListener('DOMContentLoaded', function () {
     { src: '../assets/img/world2.png', alt: 'world2' },
     { src: '../assets/img/world3.png', alt: 'world3' }
   ]
-
-  const slider = document.querySelector('.slider')
+  let slider = document.querySelector('.slider')
   let navbar = document.getElementById('navbar')
   let currentSlideIndex = 0
 
-  if (navbar) {
+  if ((navbar, slider)) {
     setTimeout(function () {
       navbar.classList.add('show')
+    }, 500)
+    setTimeout(function () {
+      slider.classList.add('show')
     }, 500)
   }
 
@@ -19,9 +21,9 @@ document.addEventListener('DOMContentLoaded', function () {
     const slides = document.querySelectorAll('.slider img')
     slides.forEach((slide, i) => {
       if (i === index) {
-        slide.style.opacity = 1 // Показываем текущий слайд
+        slide.style.opacity = 1
       } else {
-        slide.style.opacity = 0 // Скрываем остальные слайды
+        slide.style.opacity = 0
       }
     })
   }
@@ -36,7 +38,7 @@ document.addEventListener('DOMContentLoaded', function () {
     imgElement.classList.add('slider')
     imgElement.src = image.src
     imgElement.alt = image.alt
-    imgElement.style.opacity = index === 0 ? 1 : 0 // Показываем первый слайд
+    imgElement.style.opacity = index === 0 ? 1 : 0
     slider.appendChild(imgElement)
   })
 })

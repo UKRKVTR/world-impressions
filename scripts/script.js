@@ -6,16 +6,55 @@ document.addEventListener('DOMContentLoaded', function () {
   ]
   let slider = document.querySelector('.slider')
   let navbar = document.getElementById('navbar')
+  let logoIntro = document.querySelector('.introLogo')
+  let intro = document.querySelector('.intro')
+  const moduleWin = document.querySelector('.contactsWindow')
+  const moduleWindow = document.querySelector('.moduleWindow')
+  const contacts = document.querySelector('#contacts')
+
   let currentSlideIndex = 0
 
-  if ((navbar, slider)) {
-    setTimeout(function () {
-      navbar.classList.add('show')
-    }, 500)
-    setTimeout(function () {
-      slider.classList.add('show')
-    }, 500)
+  function showContacts () {
+    contacts.addEventListener('click', function () {
+      moduleWin.classList.add('show')
+    })
   }
+
+  function hideContacts (e) {
+    if (!e.target.closest('.moduleWindow')) {
+      moduleWin.classList.remove('show')
+      document.removeEventListener('click', hideContacts)
+    }
+  }
+
+  moduleWindow.addEventListener('click', function (e) {
+    e.stopPropagation()
+  })
+
+  document
+    .querySelector('.contactsWindow')
+    .addEventListener('click', function () {
+      moduleWin.classList.add('show')
+      document.addEventListener('click', hideContacts)
+    })
+
+  setTimeout(showContacts, 2000)
+  setTimeout(function () {
+    logoIntro.classList.add('show')
+  }, 100)
+
+  setTimeout(function () {
+    intro.classList.add('show')
+    setTimeout(function () {
+      intro.style.display = 'none'
+      setTimeout(function () {
+        navbar.classList.add('show')
+      }, 300)
+      setTimeout(function () {
+        slider.classList.add('show')
+      }, 300)
+    }, 500)
+  }, 500)
 
   function showSlide (index) {
     const slides = document.querySelectorAll('.slider img')

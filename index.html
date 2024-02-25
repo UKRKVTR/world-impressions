@@ -12,8 +12,12 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="icon" type="image/x-icon" href="./assets/img/сайт.png" />
   </head>
   <body>
+    <div class="intro">
+      <img class="introLogo" src="./assets/img/сайт.png" alt="intro" />
+    </div>
     <header>
       <nav id="navbar">
         <a href="#">Головна</a>
@@ -26,7 +30,7 @@
             draggable="false"
         /></a>
         <a href="#map">Де нас знайти</a>
-        <a href="#">Контакти</a>
+        <button class="contactBtn" id="contacts">Контакти</button>
       </nav>
     </header>
 
@@ -40,8 +44,10 @@
         </div>
       </div>
       <div class="whereAmI">
+        <span id="map">where</span>
         <h2 class="about">Шукайте нас за адрессою</h2>
-        <div class="mapsInfo" id="map">
+        <p>м.Запоріжжя вул.Фортечна 71</p>
+        <div class="mapsInfo">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d669.6882875004943!2d35.17486416963552!3d47.82500099820068!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dc5d105e838187%3A0xa64e0f7a038d4cf6!2sSvit%20Zakhoplen%CA%B9!5e0!3m2!1sru!2sua!4v1708268436306!5m2!1sru!2sua"
             class="map"
@@ -59,8 +65,35 @@
           />
         </div>
       </div>
+      <div class="contactsWindow">
+        <div class="moduleWindow">
+          <div class="timeInfo">
+            <h3>Графік роботи:</h3>
+            <p class="time">Пн-ПТ 10-18</p>
+            <p class="time">Сб-Нд Вихідний</p>
+          </div>
+          <div class="contacts">
+            <a class="telNumber" href="tel:+380989806529">+38(098)9806529</a
+            ><a href=""></a>
+            <a class="telNumber" href="tel:+380660224672">+38(066)0224672</a
+            ><a href=""></a>
+          </div>
+        </div>
+      </div>
     </main>
-    <footer></footer>
+    <footer id="timeWork">
+      <div class="timeInfo">
+        <h3>Графік роботи:</h3>
+        <p class="time">Пн-ПТ 10-18</p>
+        <p class="time">Сб-Нд Вихідний</p>
+      </div>
+      <div class="contacts">
+        <a class="telNumber" href="tel:+380989806529">+38(098)9806529</a
+        ><a href=""></a>
+        <a class="telNumber" href="tel:+380660224672">+38(066)0224672</a
+        ><a href=""></a>
+      </div>
+    </footer>
     <script src="./scripts/script.js"></script>
   </body>
 </html>

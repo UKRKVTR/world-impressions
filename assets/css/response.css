@@ -2,6 +2,9 @@
   nav {
     font-size: 0.75rem;
   }
+  .link {
+    display: inline;
+  }
   .logo {
     width: 80px;
   }
@@ -32,15 +35,20 @@
     padding-top: 10px;
   }
   .mapsInfo {
-    width: 600px;
+    max-width: 400px;
+    width: 100%;
+    min-width: 200px;
     margin: 150px auto;
   }
   .map {
-    width: 300px;
+    max-width: 400px;
+    width: 100%;
+    min-width: 200px;
     height: 275px;
   }
   .geolocation {
-    width: 300px;
+    max-width: 400px;
+    width: 100%;
     height: 275px;
   }
   .contactBtn {
@@ -60,23 +68,28 @@
   }
 }
 @media screen and (max-width: 426px) {
-  nav {
+  nav > a {
     font-size: 0.5rem;
     gap: 10px;
+  }
+  .link,
+  .contactBtn {
+    display: none;
   }
   .logo {
     width: 60px;
   }
   .main {
     padding: 0;
+    margin: 0;
   }
   .slider {
-    max-width: 430px;
+    max-width: 100%;
     width: 100%;
-    height: 400px;
+    height: 300px;
   }
   .textSlide {
-    height: 400px;
+    height: 300px;
   }
   .title {
     font-size: 2rem;
@@ -86,17 +99,17 @@
     padding-top: 10px;
   }
   .mapsInfo {
-    width: 450px;
+    width: 200px;
     margin: 150px auto;
-    flex-direction: column;
+    flex-direction: row;
   }
   .map {
-    max-width: 430px;
-    height: 300px;
+    max-width: 200px;
+    height: 200px;
   }
   .geolocation {
-    max-width: 430px;
-    height: 300px;
+    max-width: 200px;
+    height: 200px;
   }
   .contactBtn {
     font-size: 0.5rem;
@@ -113,6 +126,7 @@
   .time,
   .telNumber {
     font-size: 0.5rem;
+    gap: 2px;
   }
   footer {
     gap: 150px;

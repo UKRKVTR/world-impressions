@@ -150,6 +150,7 @@ main {
   opacity: 0.5;
 }
 .roadMap {
+  max-width: 100%;
   display: block;
   margin: 120px auto -100px;
 }
@@ -165,7 +166,7 @@ main {
 }
 
 .mapsInfo {
-  width: 1000px;
+  max-width: 1000px;
   max-height: 50px;
   display: flex;
   justify-content: center;

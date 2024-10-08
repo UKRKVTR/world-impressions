@@ -67,7 +67,7 @@
     font-size: 0.75rem;
   }
 }
-@media screen and (max-width: 426px) {
+@media screen and (max-width: 430px) {
   nav > a {
     font-size: 0.5rem;
     gap: 10px;

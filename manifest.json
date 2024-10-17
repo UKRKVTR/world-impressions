@@ -1,20 +1,15 @@
 {
-  "name": "My HTML PWA",
-  "short_name": "HTMLPWA",
-  "start_url": "/",
-  "display": "standalone",
-  "background_color": "#ffffff",
-  "theme_color": "#000000",
+  "name": "Світ захоплень",
+  "short_name": "Захоплень",
   "icons": [
     {
-      "src": "/assets/img/сайт.png",
+      "src": "/assets/img/logo.png",
       "sizes": "192x192",
       "type": "image/png"
-    },
-    {
-      "src": "/assets/img/сайт.png",
-      "sizes": "512x512",
-      "type": "image/png"
     }
-  ]
+  ],
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#000000"
 }

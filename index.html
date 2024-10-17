@@ -13,8 +13,25 @@
     />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="stylesheet" href="./assets/css/response.css" />
-
+    <link rel="manifest" href="/manifest.json" />
     <link rel="icon" type="image/x-icon" href="./assets/img/сайт.png" />
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function () {
+          navigator.serviceWorker.register('/scripts/sw.js').then(
+            function (registration) {
+              console.log(
+                'Service Worker registered with scope:',
+                registration.scope
+              )
+            },
+            function (err) {
+              console.log('Service Worker registration failed:', err)
+            }
+          )
+        })
+      }
+    </script>
   </head>
   <body>
     <div class="intro">
